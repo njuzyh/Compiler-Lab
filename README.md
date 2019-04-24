@@ -1,2 +1,2 @@
-# Complier-Lab
-NJU Complier Lab
+# Compiler-Lab
+NJU Compiler Lab
