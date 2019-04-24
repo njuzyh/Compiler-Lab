@@ -1,0 +1,9 @@
+float x, y;
+int p[2][5];
+struct pp {
+	int i;
+	float i;
+}a;
+
+int g(int a){
+}
