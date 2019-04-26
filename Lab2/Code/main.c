@@ -20,10 +20,14 @@ int main(int argc, char** argv) {
 	yyrestart(f);
 	yyparse();
 	init_symbolTable();
+	//outputNode(programRoot, 0);
 	startProgram(programRoot);
-	Sym sym = searchSymbol("g");
+	//printSymTab();
+	
+	
 	//printf("find g and param num is %d, %d\n", sym->type->u.function.paramnum, sym->type->u.function.param->type->u.basic);
 	//printf("%d %d", sym->type->u.array.size, sym->type->u.array.elem->u.array.size);
-	printSymTab();
+	//printf("a's %d %s\n", sym->type->kind, sym->type->u.structure.structname);
+	
 	return 0;
 }

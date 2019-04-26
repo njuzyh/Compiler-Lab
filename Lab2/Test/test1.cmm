@@ -1,9 +1,17 @@
-float x, y;
-int p[2][5];
-struct pp {
-	int i;
-	float i;
-}a;
 
-int g(int a){
-}
+ struct Temp2
+ {
+	struct inner {
+		int k;
+		struct {
+			int x = 0;
+		}c;
+	}a;
+ };
+
+ int main()
+
+ {
+	struct Temp2 t;
+	t.a.c.x = 1;
+ }
