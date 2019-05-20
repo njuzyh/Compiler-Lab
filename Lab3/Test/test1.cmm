@@ -1,9 +1,6 @@
-float x, y;
-int p[2][5];
-struct pp {
-	int i;
-	float i;
-}a;
-
-int g(int a){
+int main()
+{
+	int i, a[5], j;
+	j = 1;
+	i = a[j];
 }

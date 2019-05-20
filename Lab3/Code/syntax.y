@@ -46,6 +46,7 @@ ExtDefList : ExtDef ExtDefList { $$ = newGramNode("ExtDefList", 2, $1, $2); }
 ExtDef : Specifier ExtDecList SEMI { $$ = newGramNode("ExtDef", 3, $1, $2, $3); }
 	| Specifier SEMI { $$ = newGramNode("ExtDef", 2, $1, $2); }
 	| Specifier FunDec CompSt { $$ = newGramNode("ExtDef", 3, $1, $2, $3); }
+	| Specifier FunDec SEMI { $$ = newGramNode("ExtDef", 3, $1, $2, $3); }
 	| Specifier error SEMI { wrong = 1; printError( $1->lineNo, "Wrong Extern Definiton\n"); }
 	;
 ExtDecList : VarDec { $$ = newGramNode("ExtDecList", 1, $1);}
